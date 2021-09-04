@@ -62,7 +62,7 @@ Copy and paste the following code and save it as `index.html`.
 <body>
 <pre id='token'></pre>
 <pre id='receipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.3"></script>
+<script src="https://unpkg.com/rareterm@0.0.4"></script>
 <script>
 const mint = async () => {
 
@@ -212,7 +212,7 @@ In the following code we will first mint an NFT, and then put it on sale by usin
 <pre id='tokenRecipt'></pre>
 <pre id='trade'></pre>
 <pre id='tradeRecipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.3"></script>
+<script src="https://unpkg.com/rareterm@0.0.4"></script>
 <script>
 const rarepress = new Rareterm();
 const mint = async () => {
@@ -487,7 +487,7 @@ With Rarepress, minting fungible tokens is as simple as adding one line to the E
 <body>
 <pre id='token'></pre>
 <pre id='tokenReceipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.3"></script>
+<script src="https://unpkg.com/rareterm@0.0.4"></script>
 <script>
 const mint = async () => {
   // 1. Initialize
@@ -545,7 +545,7 @@ Let's put our Bitcoin fungible tokens up for sale.
 <body>
 <pre id='token'></pre>
 <pre id='trade'></pre>
-<script src="https://unpkg.com/rareterm@0.0.3"></script>
+<script src="https://unpkg.com/rareterm@0.0.4"></script>
 <script>
 const rarepress = new Rareterm();
 const mint = async () => {
