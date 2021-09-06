@@ -62,7 +62,7 @@ Copy and paste the following code and save it as `index.html`.
 <body>
 <pre id='token'></pre>
 <pre id='receipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.8"></script>
+<script src="https://unpkg.com/rareterm@0.0.9"></script>
 <script>
 const mint = async () => {
 
@@ -212,7 +212,7 @@ In the following code we will first mint an NFT, and then put it on sale by usin
 <pre id='tokenRecipt'></pre>
 <pre id='trade'></pre>
 <pre id='tradeRecipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.8"></script>
+<script src="https://unpkg.com/rareterm@0.0.9"></script>
 <script>
 const rarepress = new Rareterm();
 const mint = async () => {
@@ -487,7 +487,7 @@ With Rarepress, minting fungible tokens is as simple as adding one line to the E
 <body>
 <pre id='token'></pre>
 <pre id='tokenReceipt'></pre>
-<script src="https://unpkg.com/rareterm@0.0.8"></script>
+<script src="https://unpkg.com/rareterm@0.0.9"></script>
 <script>
 const mint = async () => {
   // 1. Initialize
@@ -545,7 +545,7 @@ Let's put our Bitcoin fungible tokens up for sale.
 <body>
 <pre id='token'></pre>
 <pre id='trade'></pre>
-<script src="https://unpkg.com/rareterm@0.0.8"></script>
+<script src="https://unpkg.com/rareterm@0.0.9"></script>
 <script>
 const rarepress = new Rareterm();
 const mint = async () => {
@@ -861,7 +861,7 @@ input.addEventListener('change', async (event) => {
 
 Here's a functional JSFiddle (Completely serverless!):
 
-<iframe width="100%" height="900" src="//jsfiddle.net/skogard/qj5txm98/5/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="900" src="//jsfiddle.net/skogard/qj5txm98/8/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Adding a web file from any URL
 
@@ -910,7 +910,7 @@ document.querySelector("canvas").toBlob(async (blob) => {
 
 Here's a full fledged example for drawing stuff to canvas and then tokenizing:
 
-<iframe width="100%" height="1000" src="//jsfiddle.net/skogard/e8xvj436/5/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="1000" src="//jsfiddle.net/skogard/e8xvj436/7/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Declarative Token Creation
 
