@@ -703,6 +703,9 @@ It will ask you for the derivation path. Enter the derivation path of the key yo
 >
 > m/44'/60'/0'/0/0
 
+Once you export the private key, you can easily import it into Metamask. Just follow the instructioins here: https://metamask.zendesk.com/hc/en-us/articles/360015489331-How-to-import-an-Account
+
+
 
 ---
 
