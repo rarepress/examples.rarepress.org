@@ -623,6 +623,89 @@ Basically, we are creating a sell order that says "I am going to sell all of the
 
 This is pretty much all you need to know to tokenize anything, but Rarepress has other advanced features. Check out the following "Recipes" section for some more examples.
 
+---
+
+# Importing and Exporting Wallet
+
+There can be 2 scenarios:
+
+1. **import:** You want to import your external wallet seed into rarepress
+2. **export:** You want to export your rarepress wallet seed to external wallets
+
+To import or export a wallet seed, we need to do it using the underlying wallet that powers rarepress.
+
+`rarepress` and `rareterm.node` use a wallet library called [mushie](https://www.npmjs.com/package/mushie) (`rareterm` doesn't need to use this because it's for the browser and automatically uses Metamask), which is designed to allow flexible account switching, bulk signatures, and programmability.
+
+## Import
+
+To import a seed, you must first make sure your rarepress wallet is empty (otherwise it will overwrite the existing seed).
+
+#### 1. Back up existing seed
+
+If you already have a rarepress wallet, first back up your seed by following the instructions in the [next section](#export).
+
+#### 2. Delete the wallet
+
+Once you have backed up, remove the wallet file:
+
+```
+rm ~/.mushie
+```
+
+#### 3. Import a seed
+
+Now we are ready to import. Let's import a seed using the `mushie` library:
+
+```
+npx mushie import
+```
+
+It will ask you to enter the seed phrase, and then an encryption password.
+
+## Export
+
+There are two things you can export from the wallet:
+
+1. **The seed phrase:** You can export the seed phrase.
+2. **A single private key:** You can also selectively export a single private key derived from the seed phrase by supplying a derivation path.
+
+#### 1. Export the seed
+
+To export the seed phrase, run the following:
+
+```
+npx mushie export
+```
+
+It will ask you if you want to export seed or a privatekey.
+
+**Select `"export the seed"`.**
+
+Then it will ask for the decryption password. Enter it and it will print the decrypted seed phrase.
+
+#### 2. Export a single private key
+
+You can export a single private key derived from the seed by supplying its [BIP44 derivation path](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki).
+
+Call
+
+```
+npx mushie export
+```
+
+**Select `"export a single private key"`.**
+
+It will ask you for the derivation path. Enter the derivation path of the key you would like to export.
+
+> **TIP**
+>
+> The derivation path for a typical Ethereum wallet (such as Metamask) is:
+>
+> m/44'/60'/0'/0/0
+
+
+---
+
 # Recipes
 
 ## Building and Trading Tokens
